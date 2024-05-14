@@ -3,28 +3,28 @@ import Logo from "./Logo";
 import Form from "./Form";
 import ShoppingItems from "./ShoppingItems";
 import Stats from "./Stats";
-const shoppingItems = [
-  {
-    quantity: 4,
-    description: "Eggs",
-    gotten: false,
-    id: 1,
-  },
-  {
-    quantity: 8,
-    description: "Sugar",
-    gotten: false,
-    id: 2,
-  },
-  {
-    quantity: 3,
-    description: "Rice",
-    gotten: false,
-    id: 3,
-  },
-];
+// const shoppingItems = [
+//   {
+//     quantity: 4,
+//     description: "Eggs",
+//     gotten: false,
+//     id: 1,
+//   },
+//   {
+//     quantity: 8,
+//     description: "Sugar",
+//     gotten: false,
+//     id: 2,
+//   },
+//   {
+//     quantity: 3,
+//     description: "Rice",
+//     gotten: false,
+//     id: 3,
+//   },
+// ];
 export default function App() {
-  const [items, setItems] = useState(shoppingItems);
+  const [items, setItems] = useState([]);
   const addItems = function (item) {
     setItems((currentItems) => [...currentItems, item]);
   };
